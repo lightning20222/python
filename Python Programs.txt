@@ -1,0 +1,805 @@
+EXP 1
+Basic data types, Operators, expressions and Input Output Statements
+
+# DATA_TYPE -> NUMBER:
+
+#NUMBER:->INTEGER,->FLOAT,->COMPLEX
+
+#1)NUMBER
+#INTEGER
+Y=16
+print(type(x))
+
+
+#FLOAT
+Y=112.2
+print(type(x))
+
+
+#COMPLEX
+Y=2+4j
+print(type(x))
+-------------------------------------------------------------------------------------
+# String
+string_var = "Hello, world!"
+print("String:", string_var)
+
+-------------------------------------------------------------------------------------
+#2)SEQUENCE TYPE 
+#LIST
+x=[2,3,5,10,16]
+print(type(x))
+
+
+#TUPLE
+x=(4,2,5,9,6)
+print(type(x))
+
+---------------------------------------------------------------------------------------
+#3)BOOLEAN
+y=true print(type(y))
+
+---------------------------------------------------------------------------------------
+#4)SET
+y = {"raj", "raju", "ramesh"}
+print(type(y))
+
+---------------------------------------------------------------------------------------
+
+#5)DICTIONARY
+x = {"name" : "PM", "age" : 19}
+print(type(x))
+
+-----------------------------------------------------------------------------------------
+
+# Comparison operators
+print("Greater than:", a > b)
+print("Less than:", a < b)
+print("Equal to:", a == b)
+-----------------------------------------------------------------------------------------
+
+# Logical operators
+x = True
+y = False
+print("AND:", x and y)
+print("OR:", x or y)
+print("NOT:", not x)
+------------------------------------------------------------------------------------------
+
+# Compound assignment operators
+c = 5
+c += 2
+print("Compound Assignment:", c)
+
+------------------------------------------------------------------------------------------
+#Python Arithmetic Operators
+#1. Addition Operator
+v1=2
+v2=43
+v=v1+v2 print(v) 
+
+
+#2. Subtraction Operator 
+v1=10
+v2=20
+v=v1-v2 print(v)
+
+
+#3.Multiplication Operator
+V1=67 V2=34
+print(V1*V2) 2278
+
+#4. Division Operator
+print(V1/V2) 
+
+#5. Modulus Operator 
+print(V1%V2) 
+
+#6. Exponentiation Operator : 
+print(V1**V2)
+
+#7. Floor division
+print(V1//V2) 1
+
+------------------------------------------------------------------------------------------
+
+# Python program to demonstrate numeric value
+A=5
+print("TYPE OF A:",type(A)) 
+
+
+A=5.5
+print("TYPE OF A:",type(A)) 
+
+
+B="PM"
+print("TYPE OF B",type(B)) 
+
+
+C="m”
+print("TYPE OF C",type(C)) 
+
+
+D=5+j
+print("TYPE OF C",type(D)) 
+
+
+E=3+4j
+F=4+5j
+print(E+F) (7+9j)
+
+print(E*F) (-8+31j)
+
+print(E-F) (-1-1j)
+
+--------------------------------------------------------------------------------------------
+#STRING       expressions /Sequence Type
+# characters of String
+STRING="PM"
+print(STRING) 
+
+print("\nFirst character of String is: ",STRING[0])
+
+S="PRTO_MAL"
+print("\n LAST CHARACTER OF STRING IS:",S[-1])
+
+print("\n 2nd LAST CHARACTER OF STRING IS:",S[-2])
+
+print("\n FIRST & LAST CHARACTER OF STRING IS:",S[1],S[-1])
+
+print("\n FIRST & LAST CHARACTER OF STRING IS:",S[0],S[-1])
+
+//... # upper() function to convert
+//... # string to upper case
+
+STRING="prto is live in mumbai"
+print("\n CONVERTED STRING IS:",STRING.upper())
+
+
+//... # lower() function to convert
+//... # string to lower case
+
+STRING= "WHAT ARE YOU DOING!"
+print("\n CONVERTED STRING IS:",STRING.lower())
+
+
+# Input Output Statement python
+# Taking input from the user
+>>>name = input("Enter your name: ")
+ 
+
+# Output
+>>>print("Hello, " + name)
+>>>print(type(name))
+
+Enter your name: PM
+Hello, PM
+<class 'str'>
+
+-------------------------------------------------------------------------------------------
+EXP2
+Control flow statements : Conditional statements (if , if…else , nested if).
+
+#IF STATEMENT
+A=30
+if A>20:
+print("A IS GREATER THAN 20");
+
+
+#IF ELSE PART IS RIGHT 
+if A>30:
+print("A IS GREATER THAN 10"); print(" I AM IN BLOCK IF");
+else:
+print("A IS SMALLER THAN 10"); print(" I AM IN BLOCK ELSE");
+
+x=18
+if x>18:
+print("YOU ARE ELIGIBLE FOR VOTE"); print("YOUR AGE IS:",x);
+else:
+print("YOU ARE NOT ELIGIBLE FOR VOTE"); print("YOUR AGE IS:",x);
+
+A=20
+if A>10:
+print("A IS GREATER THAN 10"); print(" I AM IN BLOCK IF");
+else:
+print("A IS SMALLER THAN 10"); print(" I AM IN BLOCK ELSE");
+
+x=19
+if x>18:
+print("YOU ARE ELIGIBLE FOR VOTE"); print("YOUR AGE IS:",x);
+else:
+print("YOU ARE NOT ELIGIBLE FOR VOTE"); print("YOUR AGE IS:",x);
+
+
+#  python program to illustrate nested If statement
+if a==20:
+#  First if statement if a<30:
+print("A IS SMALLER THAN 30");
+if a>19:
+print("A IS GREATER THAN 19");
+else:
+print("A IS SMALLER THAN 19");
+
+if a==31:
+#  First if statement if a<30:
+print("A IS SMALLER THAN 30");
+if a>19:
+print("A IS GREATER THAN 19");
+else:
+print("A IS SMALLER THAN 19"); 
+
+
+#  if else input from user
+x=input("ENTER YOUR AGE :")
+if x>18:
+print("YOU ARE ELIGIBLE FOR VOTE"); print("YOUR AGE IS:",x);
+else:
+print("YOU ARE NOT ELIGIBLE FOR VOTE"); print("YOUR AGE IS:",x);
+
+
+#  Python program to illustrate if-elif-else ladder 
+a=30
+if a==20:
+print("A IS 20"); elif 
+a==16:
+print("A IS 16"); elif a==89:
+print("A is 89"); else:
+print("A IS NOT PRESENT");
+
+a=20
+if a==20:
+print("A IS 20"); elif a==16:
+print("A IS 16"); elif a==89:
+print("A is 89"); else:
+print("A IS NOT PRESENT");
+------------------------------------------------------------------------------------------
+EXP3
+#Looping in Python (while loop, for loop, nested loop)
+
+# Program to print numbers from 1 to 5 using while loop
+num = 1
+while num <= 5:
+    print(num, "\n-----------------------------------------------------")
+    num += 1
+
+# Program to print numbers from 1 to 5 using for loop
+for num in range(1, 6):
+    print(num, "\n---------------------------")
+
+# Program to print a pattern using nested loop
+rows = 5
+
+# Outer loop to handle number of rows
+for i in range(0, rows):
+
+    # Inner loop to handle number of columns
+    for j in range(0, i + 1):
+        print("* ", end="")
+
+    # Move to the next line after each row is printed
+    print()
+
+------------------------------------------------------------------------------------------
+EXP4
+
+# Different List and List operations
+# Creating a list
+my_list = [1, 2, 3, 4, 5]
+
+# Accessing elements of the list
+print("First element:", my_list[0])
+print("Last element:", my_list[-1])
+
+# Adding elements to a list
+my_list = [1, 2, 3]
+my_list.append(4)
+print("List after appending:", my_list)
+
+# Adding elements at specific index
+my_list.insert(2, 2.5)
+print("List after inserting at index 2:", my_list)
+
+# Removing elements from a list
+my_list = [1, 2, 3, 4, 5]
+my_list.remove(3)
+print("List after removing element 3:", my_list)
+
+# Removing elements by index
+del my_list[0]
+print("List after deleting element at index 0:", my_list)
+
+# Iterating over a list
+my_list = [1, 2, 3, 4, 5]
+for item in my_list:
+    print(item)
+
+# Finding the length of a list
+my_list = [1, 2, 3, 4, 5]
+length = len(my_list)
+print("Length of the list:", length)
+
+-------------------------------------------------------------------------------------------
+EXP5
+Tuple operations using Built-in functions
+
+# Creating a tuple
+my_tuple = (1, 2, 3, 4, 5)
+print("Tuple:", my_tuple)
+
+# Accessing elements of a tuple
+my_tuple = (1, 2, 3, 4, 5)
+print("First element:", my_tuple[0])
+print("Last element:", my_tuple[-1])
+
+# Finding the length of a tuple
+my_tuple = (1, 2, 3, 4, 5)
+length = len(my_tuple)
+print("Length of the tuple:", length)
+
+# Concatenating two tuples
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+concatenated_tuple = tuple1 + tuple2
+print("Concatenated tuple:", concatenated_tuple)
+
+# Repeating a tuple
+my_tuple = (1, 2, 3)
+repeated_tuple = my_tuple * 3
+print("Repeated tuple:", repeated_tuple)
+
+# Checking if an element exists in a tuple
+my_tuple = (1, 2, 3, 4, 5)
+element = 3
+if element in my_tuple:
+    print("Element", element, "exists in the tuple.")
+else:
+    print("Element", element, "does not exist in the tuple.")
+
+-------------------------------------------------------------------------------------------
+EXP6
+implement Built-in Set and String functions
+
+# Creating sets
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+# Union of sets
+union_set = set1.union(set2)
+print("Union of sets:", union_set)
+
+# Intersection of sets
+intersection_set = set1.intersection(set2)
+print("Intersection of sets:", intersection_set)
+
+# Difference of sets
+difference_set = set1.difference(set2)
+print("Difference of sets (set1 - set2):", difference_set)
+
+# Symmetric difference of sets
+symmetric_difference_set = set1.symmetric_difference(set2)
+print("Symmetric difference of sets:", symmetric_difference_set)
+
+# String operations
+my_string = "Hello, World!"
+
+# Length of string
+print("Length of string:", len(my_string))
+
+# Convert string to lowercase
+lowercase_string = my_string.lower()
+print("Lowercase string:", lowercase_string)
+
+# Convert string to uppercase
+uppercase_string = my_string.upper()
+print("Uppercase string:", uppercase_string)
+
+# Count occurrences of a substring
+substring = "l"
+count = my_string.count(substring)
+print("Count of '", substring, "':", count)
+
+# Replace substring in string
+new_string = my_string.replace("World", "Universe")
+print("String after replacement:", new_string)
+
+# Split string into list of substrings
+split_string = my_string.split(",")
+print("Split string:", split_string)
+
+-------------------------------------------------------------------------------------------
+EXP7
+implement Functions (Built-in, User Defined, Anonymous).
+
+# Built-in function: abs()
+number = -10
+absolute_value = abs(number)
+print("Absolute value of", number, "is", absolute_value)
+
+# Built-in function: max()
+numbers = [1, 5, 3, 7, 2]
+maximum = max(numbers)
+print("Maximum number in the list is", maximum)
+
+# Built-in function: sum()
+sum_of_numbers = sum(numbers)
+print("Sum of numbers in the list is", sum_of_numbers)
+
+# User-defined function to calculate the area of a rectangle
+def calculate_rectangle_area(length, width):
+    area = length * width
+    return area
+
+# Using the user-defined function
+length = 5
+width = 3
+area = calculate_rectangle_area(length, width)
+print("Area of the rectangle with length", length, "and width", width, "is", area)
+
+# Anonymous function to calculate the square of a number
+square = lambda x: x ** 2
+
+# Using the anonymous function
+number = 4
+result = square(number)
+print("Square of", number, "is", result)
+
+# Anonymous function with multiple arguments
+addition = lambda x, y: x + y
+num1 = 3
+num2 = 5
+sum_result = addition(num1, num2)
+print("Sum of", num1, "and", num2, "is", sum_result)
+
+-------------------------------------------------------------------------------------------
+EXP8
+implement Classes, object, Static method, constructors and class.
+
+class Car:
+    # Class variable
+    total_cars = 0
+
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        # Increment total_cars when a new car object is created
+        Car.total_cars += 1
+
+    def display_info(self):
+        print("Brand:", self.brand)
+        print("Model:", self.model)
+        print("Year:", self.year)
+
+    # Static method to display total number of cars
+    @staticmethod
+    def display_total_cars():
+        print("Total cars:", Car.total_cars)
+
+
+# Creating objects of the Car class
+car1 = Car("Toyota", "Corolla", 2020)
+car2 = Car("Honda", "Civic", 2019)
+
+# Accessing object attributes and calling instance method
+print("Car 1 information:")
+car1.display_info()
+print()
+
+print("Car 2 information:")
+car2.display_info()
+print()
+
+# Calling static method
+Car.display_total_cars()
+
+-------------------------------------------------------------------------------------------
+EXP9
+implement different types of Inheritance.
+
+# Parent class
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+# Child class inheriting from Animal
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+
+# Creating object of child class
+dog = Dog()
+dog.speak()  # Calling method from parent class
+dog.bark()   # Calling method from child class
+
+# Parent class
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+# Child class inheriting from Animal
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+
+# Grandchild class inheriting from Dog
+class Labrador(Dog):
+    def color(self):
+        print("Labrador is golden in color")
+
+# Creating object of grandchild class
+labrador = Labrador()
+labrador.speak()  # Calling method from grandparent class
+labrador.bark()   # Calling method from parent class
+labrador.color()  # Calling method from child class
+
+# Parent class
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+# Child class 1 inheriting from Animal
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+
+# Child class 2 inheriting from Animal
+class Cat(Animal):
+    def meow(self):
+        print("Cat meows")
+
+# Creating objects of child classes
+dog = Dog()
+cat = Cat()
+
+dog.speak()  # Calling method from parent class using dog object
+dog.bark()   # Calling method from child class 1
+cat.speak()  # Calling method from parent class using cat object
+cat.meow()   # Calling method from child class 2
+
+-------------------------------------------------------------------------------------------
+EXP10
+implement Polymorphism with Method overloading and Method Overriding.
+
+class Calculator:
+    def add(self, a, b=0, c=0):
+        return a + b + c
+
+# Creating object of Calculator class
+calc = Calculator()
+
+# Calling add method with different number of arguments
+print("Sum with 2 arguments:", calc.add(5, 3))
+print("Sum with 3 arguments:", calc.add(5, 3, 2))
+
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+
+# Child class inheriting from Animal
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+
+# Creating object of Dog class
+dog = Dog()
+
+# Calling sound method
+dog.sound()  # Output will be "Dog barks" because of method overriding
+
+-------------------------------------------------------------------------------------------
+EXP11
+implement Abstract class, Abstract method and Interfaces in Python.
+
+from abc import ABC, abstractmethod
+
+# Abstract class
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+    @abstractmethod
+    def perimeter(self):
+        pass
+
+# Concrete class implementing Shape interface
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
+# Concrete class implementing Shape interface
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
+
+# Creating objects of concrete classes
+rectangle = Rectangle(5, 4)
+circle = Circle(3)
+
+# Calling area and perimeter methods of concrete classes
+print("Rectangle:")
+print("Area:", rectangle.area())
+print("Perimeter:", rectangle.perimeter())
+
+print("\nCircle:")
+print("Area:", circle.area())
+print("Perimeter:", circle.perimeter())
+
+-------------------------------------------------------------------------------------------
+EXP12
+implement User-defined modules/packages and import them in a program
+
+# math_operations.py
+
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    return x / y
+
+# main.py
+
+# Importing the math_operations module
+import math_operations
+
+# Using functions from the math_operations module
+result_add = math_operations.add(5, 3)
+result_subtract = math_operations.subtract(5, 3)
+result_multiply = math_operations.multiply(5, 3)
+result_divide = math_operations.divide(5, 3)
+
+# Printing results
+print("Addition:", result_add)
+print("Subtraction:", result_subtract)
+print("Multiplication:", result_multiply)
+print("Division:", result_divide)
+
+-------------------------------------------------------------------------------------------
+EXP13
+#Thread.py
+#Program 1
+import thread # import the thread module  
+import time # import time module  
+  
+def cal_sqre(num): # define the cal_sqre function  
+    print(" Calculate the square root of the given number")  
+    for n in num:   
+        time.sleep(0.3) # at each iteration it waits for 0.3 time  
+        print(' Square is : ', n * n)  
+  
+def cal_cube(num): # define the cal_cube() function  
+    print(" Calculate the cube of  the given number")  
+    for n in num:   
+        time.sleep(0.3) # at each iteration it waits for 0.3 time  
+        print(" Cube is : ", n * n *n)  
+  
+arr = [9, 12, 8, 6, 4] # array  
+  
+t1 = time.time() # get total time to execute the functions  
+cal_sqre(arr) # call cal_sqre() function  
+cal_cube(arr) # call cal_cube() function  
+  
+print(" Total time taken by threads is :", time.time() - t1) # print the total time  
+
+
+#Program 2:
+#Synchronizing Threads in Python:
+#Thread.py
+import time # import time module  
+import threading  
+from threading import *  
+def cal_sqre(num): # define a square calculating function  
+    print(" Calculate the square root of the given number")  
+    for n in num: # Use for loop   
+        time.sleep(0.3) # at each iteration it waits for 0.3 time  
+        print(' Square is : ', n * n)  
+  
+def cal_cube(num): # define a cube calculating function  
+    print(" Calculate the cube of  the given number")  
+    for n in num: # for loop  
+        time.sleep(0.3) # at each iteration it waits for 0.3 time  
+        print(" Cube is : ", n * n *n)  
+  
+ar = [9, 12, 8, 6, 4] # array  
+  
+t = time.time() # get total time to execute the functions  
+#cal_cube(ar)  
+#cal_sqre(ar)  
+th1 = threading.Thread(target=cal_sqre, args=(ar, ))  
+th2 = threading.Thread(target=cal_cube, args=(ar, ))  
+th1.start()  
+th2.start()  
+th1.join()  
+th2.join()  
+print(" Total time taking by threads is :", time.time() - t) # print the total time  
+print(" Again executing the main thread")  
+print(" Thread 1 and Thread 2 have finished their execution.")
+
+-------------------------------------------------------------------------------------------
+EXP14
+create a menu driven application which should cover all the built-in exceptions in python.
+
+def handle_exception(exception):
+    print("Exception occurred:", exception)
+
+
+def divide(x, y):
+    try:
+        result = x / y
+        print("Result of division:", result)
+    except ZeroDivisionError as e:
+        handle_exception(e)
+    except TypeError as e:
+        handle_exception(e)
+
+
+def access_list_element(lst, index):
+    try:
+        value = lst[index]
+        print("Value at index", index, ":", value)
+    except IndexError as e:
+        handle_exception(e)
+
+
+def open_file(file_name):
+    try:
+        with open(file_name, 'r') as file:
+            contents = file.read()
+            print("Contents of file:")
+            print(contents)
+    except FileNotFoundError as e:
+        handle_exception(e)
+
+
+def main():
+    while True:
+        print("\nMenu:")
+        print("1. Divide two numbers")
+        print("2. Access element from list")
+        print("3. Open a file")
+        print("4. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            try:
+                x = float(input("Enter first number: "))
+                y = float(input("Enter second number: "))
+                divide(x, y)
+            except ValueError as e:
+                handle_exception(e)
+        elif choice == '2':
+            lst = [1, 2, 3, 4, 5]
+            index = int(input("Enter index to access: "))
+            access_list_element(lst, index)
+        elif choice == '3':
+            file_name = input("Enter file name: ")
+            open_file(file_name)
+        elif choice == '4':
+            print("Exiting program...")
+            break
+        else:
+            print("Invalid choice! Please select again.")
+
+
+if __name__ == "__main__":
+    main()
